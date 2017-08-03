@@ -17,11 +17,11 @@ House.create([
 ])
 
 Character.create([
-  {name:"Jon Stark", img_url:"https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwjq7cal3LnVAhXC5YMKHYrdDyEQjBwIBA&url=https%3A%2F%2Fpmctvline2.files.wordpress.com%2F2016%2F02%2Fgame-of-thrones-jon-snow.jpg%3Fw%3D620&psig=AFQjCNHHEY4HArttVEsZioxE1hsElU9OAw&ust=1501803536882641", house_name: house stark},
-  {name:"Arya Stark", img_url:"http://cdn.images.express.co.uk/img/dynamic/20/590x/secondary/Arya-Stark-557898.jpg", house_name: house stark},
-  {name:"Cersei Lannister", img_url:"https://hypebeast.imgix.net/http%3A%2F%2Fhypebeast.com%2Fimage%2F2017%2F03%2Ffacebook-teaser_720.jpg?fit=max&fm=pjpg&ixlib=php-1.1.0&q=90&w=960&s=7ae0ccf59b50ae5fca26bbffb6e4a905", house_name: house lannister},
-  {name:"Jamie Lannister", img_url:"http://cdn.images.express.co.uk/img/dynamic/20/590x/secondary/Jaime-Lannister-953791.jpg", house_name: house lannister},
-  {name:"Samwell Tarly", img_url:"http://legionofleia.com/wp-content/uploads/2015/09/game-of-thrones-1070x602.jpg", house_name: house tarly},
-  {name:"Yara Greyjoy", img_url:"http://images3.cliqueclack.com/p/files/2014/03/Game-of-Thrones-Yara-Greyjoy-Gemma-Whelan-640x420.jpg", house_name: house greyjoy},
-  {name:"Theon Greyjoy", img_url:"https://vignette3.wikia.nocookie.net/gameofthrones/images/5/5d/Theon_Greyjoy_bow.jpg/revision/latest?cb=20110318200120", house_name: house greyjoy}
+  {name:"Jon Stark", img_url:"https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwjq7cal3LnVAhXC5YMKHYrdDyEQjBwIBA&url=https%3A%2F%2Fpmctvline2.files.wordpress.com%2F2016%2F02%2Fgame-of-thrones-jon-snow.jpg%3Fw%3D620&psig=AFQjCNHHEY4HArttVEsZioxE1hsElU9OAw&ust=1501803536882641", house: House.find_by(house_name: 'house stark')},
+  {name:"Arya Stark", img_url:"http://cdn.images.express.co.uk/img/dynamic/20/590x/secondary/Arya-Stark-557898.jpg", house: House.find_by(house_name: 'House Stark')},
+  {name:"Cersei Lannister", img_url:"https://hypebeast.imgix.net/http%3A%2F%2Fhypebeast.com%2Fimage%2F2017%2F03%2Ffacebook-teaser_720.jpg?fit=max&fm=pjpg&ixlib=php-1.1.0&q=90&w=960&s=7ae0ccf59b50ae5fca26bbffb6e4a905", house: House.find_by(house_name: 'House lannister')},
+  {name:"Jamie Lannister", img_url:"http://cdn.images.express.co.uk/img/dynamic/20/590x/secondary/Jaime-Lannister-953791.jpg", house: House.find_by(house_name: 'House lannister')},
+  {name:"Samwell Tarly", img_url:"http://legionofleia.com/wp-content/uploads/2015/09/game-of-thrones-1070x602.jpg", house: House.find_by(house_name: 'House Tarly')},
+  {name:"Yara Greyjoy", img_url:"http://images3.cliqueclack.com/p/files/2014/03/Game-of-Thrones-Yara-Greyjoy-Gemma-Whelan-640x420.jpg", house: House.find_by(house_name: 'House Greyjoy')},
+  {name:"Theon Greyjoy", img_url:"https://vignette3.wikia.nocookie.net/gameofthrones/images/5/5d/Theon_Greyjoy_bow.jpg/revision/latest?cb=20110318200120", house: House.find_by(house_name: 'House Greyjoy')}
   ])

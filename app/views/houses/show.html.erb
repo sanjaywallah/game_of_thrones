@@ -1,0 +1,8 @@
+<h2><%= link_to "Houses of GOT", houses_path %></h2>
+<h3>House <%= @house.house_name %></h3>
+
+<h3>Characters <%= link_to "ADD", new_house_character_path(@house) %></h3>
+
+  <% @house.characters.each do |character| %>
+    <p><%= link_to character.name, house_character_path(@house, character) %>  <%= link_to "(edit)", edit_house_character_path(@house, character) %></p>
+  <% end %>

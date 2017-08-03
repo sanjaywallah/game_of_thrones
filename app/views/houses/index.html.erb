@@ -1,0 +1,5 @@
+<h2>Houses of GOT</h2>
+
+  <% @houses.each do |house| %>
+      <h3><%= link_to house.house_name, house_path(house) %>  <%= link_to "(edit)", edit_house_path(house) %></h3>
+<% end %>
