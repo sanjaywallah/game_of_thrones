@@ -1,5 +1,12 @@
 <h2>New House</h2>
 
-<%= render 'form' %>
+<h2>Edit House</h2>
+
+<%= form_for @houses do |f| %>
+  <%= f.label :house_name %>
+  <%= f.text_field :house_name %>
+
+  <%= f.submit %>
+<% end %>
 
 <h2><%= link_to "Houses of GOT", houses_path %></h2>

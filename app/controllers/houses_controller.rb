@@ -9,7 +9,7 @@ class HousesController < ApplicationController
 
   def new
     @house = House.new
-end
+  end
 
   def edit
     @house = House.find(params[:id])

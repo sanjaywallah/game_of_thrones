@@ -1,4 +1,6 @@
-<%= form_for @house do |f| %>
+<h2>New Character</h2>
+
+<%= form_for [@house, @character] do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
 
