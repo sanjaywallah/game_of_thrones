@@ -1,4 +1,4 @@
 class House < ApplicationRecord
   has_many :characters, dependent: :destroy
-  validates :name, presence: true
+  validates :house_name, presence: true
 end
